@@ -1,0 +1,210 @@
+*{margin: 0;
+box-sizing: content-box;
+}
+
+header{background-color: rgb(241,184,181);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+}
+
+
+#menu-toggle {
+      display: none;
+    }
+
+    /* Estiliza o botão hambúrguer */
+    .menu-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color:#4F766A;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .menu-icon span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+
+    /* Menu lateral oculto por padrão */
+    .side-menu {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      width: 300px;
+      height: 100%;
+      background-color: #222;
+      color: white;
+      transition: 0.3s;
+      z-index: 1000;
+    }
+
+    /* Quando o checkbox estiver marcado, mostra o menu */
+    #menu-toggle:checked + .menu-icon + .side-menu {
+      left: 0;
+    }
+
+    .side-menu-content {
+      background-color: #d0f0ee;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      color: black;
+    }
+
+    .side-menu-content a {
+      display: block;
+      padding: 10px 0;
+      color: black;
+      text-decoration: none;
+    }
+
+    /* Botão de fechar (usa o label de novo) */
+    .close-btn {
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .menu-title {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .menu-footer {
+      margin-top: 30px;
+      font-size: 0.8em;
+       width: 20vh;
+    }
+    
+#exemplo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 40%;
+}
+
+#logo{ width: 12%;}
+
+.links{ text-decoration: none;
+color: #4F766A;
+font-size: 20px;}
+
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .label {
+      margin-right: 15px;
+      font-weight: bold;
+      color: #3c5d5c;
+    }
+
+    .barra-pesquisa {
+      width: 200px;
+      height: 35px;
+      background-color: #e2e2e2;
+      border: none;
+      border-radius: 20px;
+      padding: 0 15px;
+    }
+
+    .size-6{
+      height: 40px;
+      color: #000000;
+  }
+
+footer {
+  background-color: #f1b8b5;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+  position: relative;
+  margin-top: 50px;
+   width: 100%;
+}
+
+footer .social-icons {
+  margin: 10px 0;
+}
+
+footer .social-icons img {
+  width: 10vh;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+footer .mascotes {
+  display: flex;
+  gap: 2vh;
+  margin-top: 1vh;
+}
+
+footer .mascotes img {
+  width: 20vh;
+}
+
+
+
+ .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .Plushies {
+          background-color: #729b8f;
+          margin: 10px;
+          padding: 10px;
+          width: 29%;
+          box-sizing: border-box;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            
+        }
+        
+        .Plushies img {
+          margin-top: 10px;
+          width: 100%;
+            border-radius: 8px;
+        }
+        .Plushies h3 {
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .filter {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .filter select {
+            padding: 10px;
+            font-size: 14px;
+            margin: 0 10px;
+        }
+
+        .recomendacoes,
+.Plushies {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  
+}
